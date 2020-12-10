@@ -182,13 +182,10 @@
 	  <p>Có lỗi khi xử lý yêu cầu của bạn. Hãy thử lại sau vài giây.</p>
 
       <div class="error-trace">
-        Địa chỉ IP của bạn::CLIENT_IP:: Đã bị chặn bởi <span id="host-name"></span>
+	      Địa chỉ IP của bạn <strong>::CLIENT_IP::</strong> Đã bị chặn bởi (<span id="host-name"></span>)
       </div>
 	  <script>
-	function myFunction() {
-	var x = location.hostname;
-	document.getElementById("host-name").innerHTML= x;
-	}
+		document.getElementById("host-name").innerHTML= location.hostname;
 </script>
 	   <div class="error-trace">
         Quốc gia: ::GEO::
